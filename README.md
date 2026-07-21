@@ -4,7 +4,7 @@ Release notes for EyeOnian™ by Music Solutions LLC, across its native applicat
 
 The first public release of EyeOnian™.
 
-EyeOnian™ is an interactive tool to support a lifetime of exploring and visualizing harmony and scales. Browse every modal group and mode in Library view, identify the scales that fit your chord selections in Search view, and save your work as EyeOnotes.
+EyeOnian™ is an interactive tool for exploring and visualizing harmony and scales. Browse every modal group and mode in Library view, identify the scales that fit your chord selections in Search view, and save your work as EyeOnotes.
 
 Available for macOS, iOS, iPadOS, Android tablet, and the web browser.
 
