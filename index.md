@@ -1,7 +1,7 @@
 ---
 ---
 
-Release notes for EyeOnian™ by Music Solutions LLC, across its native applications (Android, iOS, iPadOS, and macOS) and its web version.
+Release notes for EyeOnian™ by Music Solutions LLC, across its native applications<!-- not-apple:start --> (Android, iOS, iPadOS, and macOS)<!-- not-apple:end --> and its web version.
 
 ## Version 1.0
 

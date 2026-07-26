@@ -7,7 +7,7 @@ title: EyeOnian™ Release Notes v1.0
 the [current version](https://musicsolutionsllc.github.io/eyeonian-release-notes/) or the [version archive](../archive/).*
 <!-- pinned-header:end -->
 
-Release notes for EyeOnian™ by Music Solutions LLC, across its native applications (Android, iOS, iPadOS, and macOS) and its web version.
+Release notes for EyeOnian™ by Music Solutions LLC, across its native applications<!-- not-apple:start --> (Android, iOS, iPadOS, and macOS)<!-- not-apple:end --> and its web version.
 
 ## Version 1.0
 
