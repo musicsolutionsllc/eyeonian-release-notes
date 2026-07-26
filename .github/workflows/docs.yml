@@ -1,0 +1,26 @@
+name: docs
+
+# Hand-edits happen in this repo, so the structural rules are enforced here.
+# See the EyeOnian implementation brief, section 8 (checks 3, 4, 7).
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch: {}
+
+jobs:
+  structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Structural checks (root==newest, frozen versions, archive complete)
+        run: |
+          BASE="${{ github.event.before }}"
+          if [ -z "$BASE" ] || [ "$BASE" = "0000000000000000000000000000000000000000" ]; then
+            python3 tools/check_docs.py
+          else
+            python3 tools/check_docs.py --base "$BASE"
+          fi
