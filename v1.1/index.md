@@ -3,7 +3,7 @@ title: EyeOnian™ Release Notes v1.1
 ---
 
 <!-- pinned-header:start -->
-*EyeOnian™ Release Notes — version 1.1, effective PUBLICATION-DATE-TBD. This is a pinned copy; see
+*EyeOnian™ Release Notes — version 1.1, effective 2026-08-19. This is a pinned copy; see
 the [current version](https://musicsolutionsllc.github.io/eyeonian-release-notes/) or the [version archive](../archive/).*
 <!-- pinned-header:end -->
 
