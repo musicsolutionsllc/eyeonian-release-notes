@@ -1,5 +1,11 @@
 ---
+title: EyeOnian™ Release Notes v1.2
 ---
+
+<!-- pinned-header:start -->
+*EyeOnian™ Release Notes — version 1.2, effective 2026-08-23. This is a pinned copy; see
+the [current version](https://musicsolutionsllc.github.io/eyeonian-release-notes/) or the [version archive](../archive/).*
+<!-- pinned-header:end -->
 
 Release notes for EyeOnian™ by Music Solutions LLC, across its native applications and its web version.
 

@@ -9,7 +9,8 @@ always served at the root of this site.
 
 | Version | Effective | Document |
 |---|---|---|
-| v1.1 | 2026-08-19 | [v1.1](v1.1/) |
+| v1.2 | 2026-08-23 | [v1.2](v1.2/) |
+| v1.1 | 2026-08-19 — **shipped** | [v1.1](v1.1/) |
 | v1.0 | 2026-07-26 — **shipped** | [v1.0](v1.0/) |
 
 Mark a version **shipped** here once an app build carrying it has gone out. From
