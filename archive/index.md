@@ -7,7 +7,17 @@ title: EyeOnian™ Release Notes
      intro line and a small table, which read as a stray fragment pinned to the
      left of a wide page -- centre both. */
   .archive-intro { text-align: center; }
-  table { margin-left: auto; margin-right: auto; }
+  /* The theme ships `.markdown-body table { display:block; width:100%; }` --
+     a full-width BLOCK, so auto margins have no free space to distribute and
+     compute to 0. Centring needs both a higher-specificity selector and a
+     width that shrink-wraps the content. */
+  .markdown-body table,
+  table {
+    display: table;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 </style>
 
 <p class="archive-intro">Every published version of this document. The <a href="https://musicsolutionsllc.github.io/eyeonian-release-notes/">current version</a> is always served at the root of this site.</p>
