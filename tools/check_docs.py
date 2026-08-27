@@ -159,6 +159,26 @@ def check_archive_lists_all() -> None:
     if missing:
         fail(7, "archive/index.md does not list: " + ", ".join(missing))
 
+    # RESOLVE the links, do not just look for the version string.
+    #
+    # Every version link on every archive page was broken from the day the
+    # archives were created: written as `](v1.0/)` from a page that lives at
+    # /archive/, they resolved to /archive/v1.0/ -- a 404 -- while the documents
+    # sit at /v1.0/. The check above passed throughout, because "v1.0" appears
+    # in the row whether or not the href points anywhere real.
+    #
+    # A broken link on a legal archive is not cosmetic: the pinned URL is what a
+    # user follows to read the terms they actually accepted.
+    bad = []
+    for v in versions:
+        target = (ROOT / "archive" / f"../{v.name}/index.md").resolve()
+        if f"](../{v.name}/)" not in text:
+            bad.append(f"{v.name}: link is not ../{v.name}/")
+        elif not target.exists():
+            bad.append(f"{v.name}: ../{v.name}/index.md does not exist")
+    if bad:
+        fail(7, "archive/index.md links do not resolve — " + "; ".join(bad))
+
 
 def main() -> int:
     ap = argparse.ArgumentParser()
